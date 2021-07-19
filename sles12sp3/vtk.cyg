@@ -35,7 +35,7 @@ else
 fi
 
 # type of tool (eg. apps, devel, python, etc.)
-MAALI_TOOL_TYPE="apps"
+MAALI_TOOL_TYPE="devel"
 
 # tool pre-requisites
 MAALI_TOOL_PREREQ="qt/5.9.3 python/2.7.14"

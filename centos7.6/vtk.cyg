@@ -40,10 +40,10 @@ MAALI_TOOL_TYPE="devel"
 MAALI_CMAKE_TOOL=1
 
 # tool pre-requisites
-MAALI_TOOL_PREREQ="qt/5.9.3 python/3.6.3"
+MAALI_TOOL_PREREQ="qt/5.15.0 python/3.6.3"
 
 # tool build pre-requisites - not added to the module, only needed for building (loaded after MAALI_TOOL_PREREQ)
-MAALI_TOOL_BUILD_PREREQ="cmake/3.15.0"
+MAALI_TOOL_BUILD_PREREQ="cmake/3.18.0"
 
 # for auto-building module files
 MAALI_MODULE_SET_PATH=1
