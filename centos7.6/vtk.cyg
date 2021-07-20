@@ -17,6 +17,8 @@ For further information see http://www.vtk.org/
 
 EOF
 
+MAALI_TOOL_CPU_TARGET="cascadelake"
+
 # specify which compilers we want to build the tool with
 MAALI_TOOL_COMPILERS="$MAALI_DEFAULT_GCC_COMPILERS"
 
@@ -52,7 +54,7 @@ MAALI_MODULE_SET_FPATH="include/vtk-${MAALI_TOOL_MAJOR_MINOR_VERSION}"
 MAALI_MODULE_SET_FCPATH="include/vtk-${MAALI_TOOL_MAJOR_MINOR_VERSION}"
 MAALI_MODULE_SET_VTK_HOME='${MAALI_APP_HOME}'
 MAALI_MODULE_SET_VTKDATA_ROOT="\${MAALI_APP_HOME}/VTK-${MAALI_TOOL_VERSION}"
-MAALI_MODULE_SET_PYTHONPATH='lib/python\$env\(MAALI_PYTHON_LIB_VERSION\)/site-packages'
+MAALI_MODULE_SET_PYTHONPATH="lib64/python3.6/site-packages"
 if [[ $(echo "if (${MAALI_TOOL_MAJOR_MINOR_VERSION} < 8.2) 1 else 0" | bc) -eq 1 ]]; then
 MAALI_MODULE_SET_LD_LIBRARY_PATH='lib'
 else
